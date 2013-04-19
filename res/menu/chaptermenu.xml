@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menuChapterQuestion"
+        android:icon="@drawable/mockmenuicon"
+        android:title="Exam Maker">
+    </item>
+    <item
+        android:id="@+id/menuChapterResult"
+        android:icon="@drawable/pdfmenuicon"
+        android:title="Result">
+    </item>
+
+</menu>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.FacultyModule"
+    android:versionCode="16"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/icaindexlogo"
+        android:label="@string/app_name" >
+        <activity
+            android:name="ica.exam.MainMenuInTabView"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortait"
+            android:theme="@style/MyTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ica.exam.Receipt"
+            android:logo="@drawable/icaindexlogo"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault" >
+        </activity>
+        <activity
+            android:name="ica.exam.Installment"
+            android:logo="@drawable/icaindexlogo"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault" >
+        </activity>
+        <activity
+            android:name="ica.exam.ICAMainLogin"
+            android:logo="@drawable/icaindexlogo"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault" >
+        </activity>
+        <activity
+            android:name="ica.exam.StudentScheduleActivity"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.coverflow.PlacementDetailsActivity"
+            android:label="Placement Details"
+            android:logo="@drawable/icaindexlogo"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault" >
+        </activity>
+        <activity
+            android:name="ica.exam.BatchListActivity"
+            android:logo="@drawable/icaindexlogo"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault" >
+        </activity>
+        <activity
+            android:name="ica.exam.SessionChapterExpandable"
+            android:logo="@drawable/icaindexlogo"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault" >
+        </activity>
+        <activity
+            android:name="ica.exam.QuestionSelectorActivity"
+            android:logo="@drawable/icaindexlogo"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault" >
+        </activity>
+        <activity
+            android:name="com.ExamSelector.QuestionCheckerActivity"
+            android:logo="@drawable/icaindexlogo"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault" >
+        </activity>
+        <activity
+            android:name="com.ExamSelector.ExamResultActivity"
+            android:logo="@drawable/icaindexlogo"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault" >
+        </activity>
+        <activity
+            android:name="ica.exam.ExamStudentDetails"
+            android:logo="@drawable/icaindexlogo"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault" >
+        </activity>
+        <activity
+            android:name="com.coverflow.PlacementSelectorActivity"
+            android:logo="@drawable/icaindexlogo"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault" >
+        </activity>
+        <activity android:name="ica.exam.LibraryActivity"
+            android:screenOrientation="sensorPortait"></activity>
+        <activity android:name="ica.exam.IndexActivity"
+            android:screenOrientation="sensorPortait"></activity>
+        <activity android:name="ica.exam.SyncActivity"
+            android:screenOrientation="sensorPortait"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/img_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/lst_next"
+        android:gravity="center_vertical"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/folder_yellow" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/img_next"
+        android:layout_toRightOf="@+id/img_subject"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:text="Subject"
+            android:textColor="#A9E2F3"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/tvChapterCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. of chapter (2)"
+            android:textColor="#81DAF5"
+            android:textSize="5pt" />
+
+        <TextView
+            android:id="@+id/txtBatchSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject: "
+            android:textColor="#81DAF5"
+            android:textSize="4pt" />
+    </LinearLayout>
+
+</RelativeLayout>

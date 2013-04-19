@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lib"
+    tools:context=".MainActivity" >
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58sp"
+        android:columnWidth="80dp"
+        android:gravity="center"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:listSelector="#00000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_title"
+        android:orientation="vertical" >
+
+        <RelativeLayout 
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/lib_logo1"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4sp"
+                android:src="@drawable/book_library" />
+
+            <ImageView
+                android:id="@+id/lib_logo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lib_logo1"
+                android:src="@drawable/lib_icon" />
+
+            <ImageView
+                android:id="@+id/sync_img"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@drawable/sync" 
+                android:layout_alignParentRight="true"
+                android:onClick="libSyc"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

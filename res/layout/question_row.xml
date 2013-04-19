@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+	<ImageView
+	    android:id="@+id/imgStatus"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/bt_question" 
+	    android:layout_alignParentLeft="true"
+	    android:layout_margin="5px"/>
+				
+	<TextView
+		android:id="@+id/tvquestionbody"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/imgStatus"
+	  	android:text="This is a question body..."
+	  	android:textSize="10pt"
+	  	android:textColor="#ffffff"
+	  	android:paddingRight="20px"
+	  	android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/tvQuestionType"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tvquestionbody"
+        android:layout_toRightOf="@+id/imgStatus"
+        android:text="Single choice"
+        android:textSize="8pt" 
+        android:paddingRight="20px"/>
+	    	    	
+    <TextView
+        android:id="@+id/tvQuestionMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:text=" (Point - 1)"
+        android:layout_below="@+id/tvquestionbody"
+        android:layout_toRightOf="@+id/tvQuestionType"/>
+	    
+	<ImageView
+        android:id="@+id/img_next"
+        android:layout_width="36px"
+        android:layout_height="36px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/lst_next"
+        android:layout_margin="5px"/>
+    
+</RelativeLayout>
